@@ -15,7 +15,10 @@ def get_largest_joltage(battery, n):
 
         largest_joltage += battery[next_digit_idx]
         window_size -= next_digit_idx
-        
+        if window_size == 0:
+            largest_joltage += battery[next_digit_idx + 1 :]
+            break
+
         battery = battery[next_digit_idx + 1 :]
 
     return int(largest_joltage)
