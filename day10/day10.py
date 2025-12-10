@@ -1,4 +1,4 @@
-from itertools import combinations, combinations_with_replacement
+from itertools import combinations
 
 with open("day10/in10.txt") as in10:
     data = in10.readlines()
